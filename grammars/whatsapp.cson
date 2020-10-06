@@ -17,9 +17,9 @@
             '5':
                 'name': 'prefix.time.whatsapp'
             '6':
-                'name': 'prefix.name.whatsapp'
                 'name': 'prefix.bracket.whatsapp'
             '7':
+                'name': 'prefix.recipient-name.whatsapp'
             '8':
                 'name': 'prefix.colon.whatsapp'
     }
