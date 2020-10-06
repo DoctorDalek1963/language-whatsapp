@@ -5,9 +5,6 @@
     'txt'
 ]
 'firstLineMatch': '\\[\\d{2}/\\d{2}/\\d{4}, \\d{1,2}:\\d{2}:\\d{2} [ap]m\\] \\w+: '
-# I'm fully aware that most of these RegExes are nigh unreadable
-# I don't care
-# Because this is a personal grammar that no-one else is ever going to see
 'patterns': [
     {
         'match': '^(\\[)(\\d{2}/\\d{2}/\\d{4})(,) (\\d{1,2}:\\d{2}:\\d{2} [ap]m)(\\]) (\\w+)(:)'
