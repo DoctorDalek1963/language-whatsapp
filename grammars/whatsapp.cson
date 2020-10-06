@@ -1,5 +1,5 @@
-'scope'name'': 'source.whatsapp'
-''name'': 'WhatsApp'
+'scopeName': 'source.whatsapp'
+'name': 'WhatsApp'
 'type': 'textmate'
 'fileTypes': [
     'txt'
