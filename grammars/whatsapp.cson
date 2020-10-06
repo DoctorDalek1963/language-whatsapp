@@ -29,6 +29,21 @@
                 'name': 'prefix.colon.whatsapp'
     }
     {
+        'match': '(<)(attached)(:) (\\d{8}-\\w+-\\d{4}-\\d{2}-\\d{2}-\\d{2}-\\d{2}-\\d{2}\\.\\w+)(>)'
+        'name': 'attachment.all.whatsapp'
+        'captures':
+            '1':
+                'name': 'attachment.bracket.whatsapp'
+            '2':
+                'name': 'attachment.attached-keyword.whatsapp'
+            '3':
+                'name': 'attachment.colon.whatsapp'
+            '4':
+                'name': 'attachment.filename.whatsapp'
+            '5':
+                'name': 'attachment.bracket.whatsapp'
+    }
+    {
         'begin': '(?<=\\s)_(?=\\S)'
         'end': '(?<=\\S)_(?=\\s)'
         'name': 'message.italic.whatsapp'
