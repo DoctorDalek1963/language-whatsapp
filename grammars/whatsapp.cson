@@ -2,7 +2,7 @@
 'name': 'WhatsApp'
 'type': 'textmate'
 'fileTypes': ['txt']
-'firstLineMatch': '^\\[\\d{2}/\\d{2}/\\d{4}, \\d{1,2}:\\d{2}:\\d{2} [ap]m\\] \\w+: '
+'firstLineMatch': '^(\\u200e)?\\[\\d{2}/\\d{2}/\\d{4}, \\d{1,2}:\\d{2}:\\d{2} [ap]m\\] \\w+: '
 'patterns': [
     {
         'match': '^(\\[)(\\d{2}/\\d{2}/\\d{4})(,) (\\d{1,2}:\\d{2}:\\d{2} [ap]m)(\\]) (\\w+)(:)'
