@@ -1,0 +1,14 @@
+{
+  "name": "language-whatsapp",
+  "version": "0.0.1",
+  "description": "A syntax highlighting package for exported WhatsApp chats.",
+  "keywords": [
+    "language",
+    "grammar"
+  ],
+  "repository": "https://github.com/atom/language-whatsapp",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
