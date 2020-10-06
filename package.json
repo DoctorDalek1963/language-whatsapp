@@ -4,12 +4,16 @@
   "description": "A syntax highlighting package for exported WhatsApp chats.",
   "keywords": [
     "language",
-    "grammar"
+    "grammar",
+    "highlighting",
+    "syntax",
+    "WhatsApp"
   ],
   "repository": {
       "type": "git",
       "url": "https://github.com/DoctorDalek1963/language-whatsapp"
   },
+  "bugs": "https://github.com/DoctorDalek1963/language-whatsapp/issues",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
