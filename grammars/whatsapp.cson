@@ -1,51 +1,51 @@
-scopeName: 'source.whatsapp'
-name: 'WhatsApp'
-type: 'textmate'
-fileTypes: [
+'scope'name'': 'source.whatsapp'
+''name'': 'WhatsApp'
+'type': 'textmate'
+'fileTypes': [
     'txt'
 ]
-firstLineMatch: '\\[\\d{2}/\\d{2}/\\d{4}, \\d{1,2}:\\d{2}:\\d{2} [ap]m\\] \\w+: '
+'firstLineMatch': '\\[\\d{2}/\\d{2}/\\d{4}, \\d{1,2}:\\d{2}:\\d{2} [ap]m\\] \\w+: '
 # I'm fully aware that most of these RegExes are nigh unreadable
 # I don't care
 # Because this is a personal grammar that no-one else is ever going to see
-patterns: [
+'patterns': [
     {
-        match: '^(\\[)(\\d{2}/\\d{2}/\\d{4})(,) (\\d{1,2}:\\d{2}:\\d{2} [ap]m)(\\]) (\\w+)(:)'
-        name: 'prefix.all.whatsapp'
-        captures:
+        'match': '^(\\[)(\\d{2}/\\d{2}/\\d{4})(,) (\\d{1,2}:\\d{2}:\\d{2} [ap]m)(\\]) (\\w+)(:)'
+        'name': 'prefix.all.whatsapp'
+        'captures':
             '1':
-                name: 'prefix.bracket.whatsapp'
+                'name': 'prefix.bracket.whatsapp'
             '2':
-                name: 'prefix.date.whatsapp'
+                'name': 'prefix.date.whatsapp'
             '3':
-                name: 'prefix.comma.whatsapp'
+                'name': 'prefix.comma.whatsapp'
             '4':
-                name: 'prefix.time.whatsapp'
+                'name': 'prefix.time.whatsapp'
             '5':
-                name: 'prefix.bracket.whatsapp'
+                'name': 'prefix.bracket.whatsapp'
             '6':
-                name: 'prefix.name.whatsapp'
+                'name': 'prefix.name.whatsapp'
             '7':
-                name: 'prefix.colon.whatsapp'
+                'name': 'prefix.colon.whatsapp'
     }
     {
-        begin: '(?<=\\s)_(?=\\S)'
-        end: '(?<=\\S)_(?=\\s)'
-        name: 'message.italic.whatsapp'
+        'begin': '(?<=\\s)_(?=\\S)'
+        'end': '(?<=\\S)_(?=\\s)'
+        'name': 'message.italic.whatsapp'
     }
     {
-        begin: '(?<=\\s)*(?=\\S)'
-        end: '(?<=\\S)*(?=\\s)'
-        name: 'message.bold.whatsapp'
+        'begin': '(?<=\\s)*(?=\\S)'
+        'end': '(?<=\\S)*(?=\\s)'
+        'name': 'message.bold.whatsapp'
     }
     {
-        begin: '(?<=\\s)~(?=\\S)'
-        end: '(?<=\\S)~(?=\\s)'
-        name: 'message.strikethrough.whatsapp'
+        'begin': '(?<=\\s)~(?=\\S)'
+        'end': '(?<=\\S)~(?=\\s)'
+        'name': 'message.strikethrough.whatsapp'
     }
     {
-        begin: '(?<=\\s)```(?=\\S)'
-        end: '(?<=\\S)```(?=\\s)'
-        name: 'message.monospace.whatsapp'
+        'begin': '(?<=\\s)```(?=\\S)'
+        'end': '(?<=\\S)```(?=\\s)'
+        'name': 'message.monospace.whatsapp'
     }
 ]

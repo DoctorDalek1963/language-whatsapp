@@ -1,3 +1,3 @@
 # WhatsApp Language Package
 
-A language package to highlight exported WhatsApp chats.
+A language package for Atom to highlight exported WhatsApp chats.
