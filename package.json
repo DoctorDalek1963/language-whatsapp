@@ -1,6 +1,6 @@
 {
   "name": "language-whatsapp",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A syntax highlighting package for exported WhatsApp chats.",
   "keywords": [
     "language",

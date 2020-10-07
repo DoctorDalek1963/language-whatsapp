@@ -2,10 +2,10 @@
 'name': 'WhatsApp'
 'type': 'textmate'
 'fileTypes': ['txt']
-'firstLineMatch': '^(\\u200e)?\\[\\d{2}/\\d{2}/\\d{4}, \\d{1,2}:\\d{2}:\\d{2} [ap]m\\] \\w+:'
+'firstLineMatch': '^(\\u200e)?\\[\\d{2}\\/\\d{2}\\/\\d{4}, \\d{1,2}:\\d{2}:\\d{2} [ap]m\\] \\w+:'
 'patterns': [
     {
-        'match': '^(\\u200e)?(\\[)(\\d{2}/\\d{2}/\\d{4})(,) (\\d{1,2}:\\d{2}:\\d{2} [ap]m)(\\]) (\\w+)(:)'
+        'match': '^(\\u200e)?(\\[)(\\d{2}\\/\\d{2}\\/\\d{4})(,) (\\d{1,2}:\\d{2}:\\d{2} [ap]m)(\\]) (\\w+)(:)'
         'name': 'prefix.all.whatsapp'
         'captures':
             '2':
@@ -24,7 +24,7 @@
                 'name': 'prefix.colon.whatsapp'
     }
     {
-        'match': '^(\\u200e)?\\[\\d{2}/\\d{2}/\\d{4}, \\d{1,2}:\\d{2}:\\d{2} [ap]m\\] \\w+: (\\u200e)?(<)(attached)(:) (\\d{8}-\\w+-\\d{4}-\\d{2}-\\d{2}-\\d{2}-\\d{2}-\\d{2}\\.\\w+)(>)$'
+        'match': '^(\\u200e)?\\[\\d{2}\\/\\d{2}\\/\\d{4}, \\d{1,2}:\\d{2}:\\d{2} [ap]m\\] \\w+: (\\u200e)?(<)(attached)(:) (\\d{8}-)(\\w+)(-\\d{4}-\\d{2}-\\d{2}-\\d{2}-\\d{2}-\\d{2}\\.\\w+)(>)$'
         'name': 'attachment.all.whatsapp'
         'captures':
             '3':
@@ -36,6 +36,10 @@
             '6':
                 'name': 'attachment.filename.whatsapp'
             '7':
+                'name': 'attachment.filename-type.whatsapp'
+            '8':
+                'name': 'attachment.filename.whatsapp'
+            '9':
                 'name': 'attachment.bracket.whatsapp'
     }
     {
