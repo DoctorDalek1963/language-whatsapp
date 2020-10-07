@@ -5,7 +5,7 @@
 'firstLineMatch': '^(\\u200e)?\\[\\d{2}\\/\\d{2}\\/\\d{4}, \\d{1,2}:\\d{2}:\\d{2} [ap]m\\] \\w+:'
 'patterns': [
     {
-        'match': '^(\\u200e)?(\\[)(\\d{2}\\/\\d{2}\\/\\d{4})(,) (\\d{1,2}:\\d{2}:\\d{2} [ap]m)(\\]) (\\w+)(:)'
+        'match': '^(\\u200e)?(\\[)(\\d{2}\\/\\d{2}\\/\\d{4})(, )(\\d{1,2}:\\d{2}:\\d{2} [ap]m)(\\]) (\\w+)(:)'
         'name': 'prefix.all.whatsapp'
         'captures':
             '2':
@@ -43,23 +43,19 @@
                 'name': 'attachment.bracket.whatsapp'
     }
     {
-        'begin': '(?<=\\s)_(?=\\S)'
-        'end': '(?<=\\S)_(?=\\s)'
+        'match': '\\b_[^_]+_\\b'
         'name': 'message.italic.whatsapp'
     }
     {
-        'begin': '(?<=\\s)*(?=\\S)'
-        'end': '(?<=\\S)*(?=\\s)'
+        'match': '\\*\\b[^*]+\\b\\*'
         'name': 'message.bold.whatsapp'
     }
     {
-        'begin': '(?<=\\s)~(?=\\S)'
-        'end': '(?<=\\S)~(?=\\s)'
+        'match': '~\\b[^~]+\\b~'
         'name': 'message.strikethrough.whatsapp'
     }
     {
-        'begin': '(?<=\\s)```(?=\\S)'
-        'end': '(?<=\\S)```(?=\\s)'
+        'match': '\\u0060{3}\\b.+\\b\\u0060{3}'
         'name': 'message.monospace.whatsapp'
     }
 ]
