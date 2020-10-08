@@ -4,6 +4,7 @@
 'fileTypes': ['txt']
 'firstLineMatch': '^(\u200e)?\\[\\d{2}\\/\\d{2}\\/\\d{4}, \\d{1,2}:\\d{2}:\\d{2} [ap]m\\] \\w+:'
 'patterns': [
+    # Prefix matches
     {
         'match': '^(\\[)(\\d{2}\\/\\d{2}\\/\\d{4})?(, )?(\\d{1,2}:\\d{2}:\\d{2} [ap]m)?(\\]) (\\w+)?(:)'
         'name': 'prefix.all.whatsapp'
@@ -23,6 +24,7 @@
             '7':
                 'name': 'prefix.colon.whatsapp'
     }
+    # Attachment matches
     {
         'match': '^\u200e(\\[)(\\d{2}\\/\\d{2}\\/\\d{4})?(, )?(\\d{1,2}:\\d{2}:\\d{2} [ap]m)?(\\]) (\\w+)?(:) \u200e(<)(attached)(:) (\\d{8}-)(\\w+)(-\\d{4}-\\d{2}-\\d{2}-\\d{2}-\\d{2}-\\d{2}\\.\\w+)(>)$'
         'name': 'attachment.all.whatsapp'
@@ -56,6 +58,7 @@
             '14':
                 'name': 'attachment.bracket.whatsapp'
     }
+    # Message formatting
     {
         'match': '\\b_[^_]+_\\b'
         'name': 'message.format.italic.whatsapp'
