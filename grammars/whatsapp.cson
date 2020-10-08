@@ -58,18 +58,22 @@
     }
     {
         'match': '\\b_[^_]+_\\b'
-        'name': 'message.italic.whatsapp'
+        'name': 'message.format.italic.whatsapp'
     }
     {
         'match': '\\*\\b[^*]+\\b\\*'
-        'name': 'message.bold.whatsapp'
+        'name': 'message.format.bold.whatsapp'
     }
     {
         'match': '~\\b[^~]+\\b~'
-        'name': 'message.strikethrough.whatsapp'
+        'name': 'message.format.strikethrough.whatsapp'
     }
     {
-        'match': '\u0060{3}\\b.+\\b\u0060{3}'
-        'name': 'message.monospace.whatsapp'
+        'match': '\u0060{3}\\b[^\u0060]+\\b\u0060{3}'
+        'name': 'message.format.monospace.whatsapp'
+    }
+    {
+        'match': '(https?://)?(\\w{3,}\\.)?[^.\\s]+\\.[^.\\s]+'
+        'name': 'message.link.whatsapp'
     }
 ]
