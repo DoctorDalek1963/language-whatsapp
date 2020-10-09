@@ -2,7 +2,7 @@
 'name': 'WhatsApp'
 'type': 'textmate'
 'fileTypes': ['txt']
-'firstLineMatch': '^(\u200e)?\\[\\d{2}\\/\\d{2}\\/\\d{4}, \\d{1,2}:\\d{2}:\\d{2} [ap]m\\] [^:]+:'
+'firstLineMatch': '^\u200e?\\[\\d{2}\\/\\d{2}\\/\\d{4}, \\d{1,2}:\\d{2}:\\d{2} [ap]m\\] [^:]+:'
 'patterns': [
     # Prefix matches
     {
@@ -26,7 +26,7 @@
     }
     # Special group messages
     {
-        'match': '^(\\[)(\\d{2}\\/\\d{2}\\/\\d{4})?(, )?(\\d{1,2}:\\d{2}:\\d{2} [ap]m)?(\\]) \u200e([^:]+)$'
+        'match': '^(\\[)(\\d{2}\\/\\d{2}\\/\\d{4})?(, )?(\\d{1,2}:\\d{2}:\\d{2} [ap]m)?(\\]) \u200e?([^:]+)$'
         'name': 'group-special.all.whatsapp'
         'captures':
             '1':
@@ -44,7 +44,7 @@
     }
     # Attachment matches
     {
-        'match': '^\u200e(\\[)(\\d{2}\\/\\d{2}\\/\\d{4})?(, )?(\\d{1,2}:\\d{2}:\\d{2} [ap]m)?(\\]) ([^:]+)?(:) \u200e(<)(attached)(:) (\\d{8}-)(\\w+)(-\\d{4}-\\d{2}-\\d{2}-\\d{2}-\\d{2}-\\d{2}\\.\\w+)(>)$'
+        'match': '^\u200e?(\\[)(\\d{2}\\/\\d{2}\\/\\d{4})?(, )?(\\d{1,2}:\\d{2}:\\d{2} [ap]m)?(\\]) ([^:]+)?(:) \u200e?(<)(attached)(:) (\\d{8}-)(\\w+)(-\\d{4}-\\d{2}-\\d{2}-\\d{2}-\\d{2}-\\d{2}\\.\\w+)(>)$'
         'name': 'attachment.all.whatsapp'
         'captures':
             '1':
