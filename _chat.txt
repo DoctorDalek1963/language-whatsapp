@@ -1,0 +1,12 @@
+[17/10/2020, 1:50:32 pm] Alex: Hey babe, I need an example chat for GitHub
+[17/10/2020, 1:50:41 pm] Sarah: What?
+[17/10/2020, 1:51:03 pm] Alex: Just go along with it. I need some example messages
+[17/10/2020, 1:51:10 pm] Sarah: What, like this?
+[17/10/2020, 1:51:15 pm] Alex: Good enough
+[17/10/2020, 1:51:25 pm] Alex: I could do with an image as well
+‎[17/10/2020, 1:51:33 pm] Sarah: ‎<attached: 00000008-PHOTO-2020-10-17-13-51-33.jpg>
+[17/10/2020, 1:51:39 pm] Alex: Perfect
+‎[17/10/2020, 1:51:53 pm] Sarah: ‎<attached: 00000010-AUDIO-2020-10-17-13-51-53.opus>
+[17/10/2020, 1:51:59 pm] Alex: Thank you x
+[17/10/2020, 1:52:04 pm] Sarah: x
+[17/10/2020, 1:52:13 pm] Alex: And here's some _italics_ and *bold stuff*
